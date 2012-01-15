@@ -4,14 +4,23 @@
   <meta charset='utf-8'>
 
   <title>isittimetomoveyet</title>
+
 </head>
 
 <body>
+  <center>
   <div style="font-weight: bold; 
+          padding-top: 200px;
           font-size: 120pt; 
           font-family: Arial, sans-serif; 
           text-decoration: none; 
           color: black;" id="answer">NO</div>
+  </center>
+  <script>
+    if (new Date('Jan 22 2012') < Date.now()) {
+      document.getElementById('answer').innerHTML = "YES";
+    }
+  </script>
 
   </div>
 
